@@ -283,7 +283,7 @@ export default class FileDialog extends Dialog {
           filename,
           path: path.replace(/\/?$/, '/') + filename
         })
-        : undefined;
+        : this.args.path;
     } else {
       if (this.args.filetype === 'directory') {
         return this.args.path;
